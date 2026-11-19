@@ -1,0 +1,84 @@
+<svg width="600" height="460" viewBox="0 0 600 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#162447" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="blueLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#06D6E8"/>
+    </linearGradient>
+    <linearGradient id="orangeLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF8A00"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background decorative grid lines -->
+  <g stroke="rgba(255,255,255,0.06)" stroke-width="1">
+    <line x1="50" y1="0" x2="50" y2="460" />
+    <line x1="150" y1="0" x2="150" y2="460" />
+    <line x1="250" y1="0" x2="250" y2="460" />
+    <line x1="350" y1="0" x2="350" y2="460" />
+    <line x1="450" y1="0" x2="450" y2="460" />
+    <line x1="550" y1="0" x2="550" y2="460" />
+    <line x1="0" y1="80" x2="600" y2="80" />
+    <line x1="0" y1="180" x2="600" y2="180" />
+    <line x1="0" y1="280" x2="600" y2="280" />
+    <line x1="0" y1="380" x2="600" y2="380" />
+  </g>
+
+  <!-- Back decorative card -->
+  <rect x="120" y="40" width="440" height="340" rx="16" fill="url(#cardGrad)" stroke="rgba(255,255,255,0.1)" filter="url(#glow)"/>
+
+  <!-- Code window header -->
+  <circle cx="150" cy="70" r="6" fill="#EF4444"/>
+  <circle cx="170" cy="70" r="6" fill="#F59E0B"/>
+  <circle cx="190" cy="70" r="6" fill="#10B981"/>
+  <line x1="120" y1="95" x2="560" y2="95" stroke="rgba(255,255,255,0.08)"/>
+
+  <!-- Code simulation lines -->
+  <rect x="150" y="120" width="120" height="10" rx="5" fill="#2563EB"/>
+  <rect x="280" y="120" width="80" height="10" rx="5" fill="#06D6E8" fill-opacity="0.6"/>
+  <rect x="170" y="145" width="200" height="8" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <rect x="170" y="165" width="260" height="8" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <rect x="170" y="185" width="140" height="8" rx="4" fill="#FF8A00" fill-opacity="0.7"/>
+
+  <!-- Floating Active Metric Card 1: Internship Talent -->
+  <g filter="url(#glow)">
+    <rect x="50" y="210" width="260" height="160" rx="12" fill="#1E293B" stroke="rgba(255,255,255,0.15)"/>
+    <rect x="70" y="235" width="36" height="36" rx="8" fill="rgba(37,99,235,0.2)"/>
+    <circle cx="88" cy="253" r="8" fill="#2563EB"/>
+    <text x="120" y="248" fill="#FFFFFF" font-family="Inter, sans-serif" font-weight="700" font-size="14">TechCYT Internships</text>
+    <text x="120" y="266" fill="#94A3B8" font-family="Inter, sans-serif" font-weight="500" font-size="11">8 Technical Domains</text>
+    <rect x="70" y="290" width="220" height="6" rx="3" fill="rgba(255,255,255,0.1)"/>
+    <rect x="70" y="290" width="176" height="6" rx="3" fill="url(#blueLine)"/>
+    <text x="70" y="325" fill="#38BDF8" font-family="Inter, sans-serif" font-weight="600" font-size="11">Industry Project Learning</text>
+    <circle cx="270" cy="322" r="4" fill="#10B981"/>
+  </g>
+
+  <!-- Floating Active Metric Card 2: SaaS Engineering -->
+  <g filter="url(#glow)">
+    <rect x="330" y="180" width="230" height="190" rx="12" fill="#1E293B" stroke="rgba(255,255,255,0.15)"/>
+    <rect x="350" y="205" width="36" height="36" rx="8" fill="rgba(255,138,0,0.2)"/>
+    <path d="M363 223L368 228L375 218" stroke="#FF8A00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="396" y="218" fill="#FFFFFF" font-family="Inter, sans-serif" font-weight="700" font-size="14">ArthFlow SaaS</text>
+    <text x="396" y="236" fill="#F59E0B" font-family="Inter, sans-serif" font-weight="600" font-size="11">Personal Finance</text>
+
+    <!-- Mini chart bar inside card -->
+    <rect x="350" y="280" width="18" height="45" rx="3" fill="#2563EB" fill-opacity="0.5"/>
+    <rect x="375" y="265" width="18" height="60" rx="3" fill="#2563EB" fill-opacity="0.7"/>
+    <rect x="400" y="250" width="18" height="75" rx="3" fill="#2563EB"/>
+    <rect x="425" y="240" width="18" height="85" rx="3" fill="#06D6E8"/>
+    <rect x="450" y="230" width="18" height="95" rx="3" fill="url(#orangeLine)"/>
+    <text x="350" y="352" fill="#94A3B8" font-family="Inter, sans-serif" font-weight="500" font-size="10">Active In Development</text>
+  </g>
+
+  <!-- Connection Nodes / Sparkles -->
+  <circle cx="310" cy="190" r="5" fill="#06D6E8"/>
+  <circle cx="310" cy="190" r="12" stroke="#06D6E8" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <line x1="280" y1="160" x2="310" y2="190" stroke="rgba(6,214,232,0.4)" stroke-width="1.5" stroke-dasharray="4 4"/>
+</svg>

@@ -1,0 +1,91 @@
+<svg width="640" height="480" viewBox="0 0 640 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EFF6FF"/>
+    </linearGradient>
+    <linearGradient id="cardBal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#101B35"/>
+      <stop offset="100%" stop-color="#1E3A8A"/>
+    </linearGradient>
+    <filter id="shadowApp" x="-20" y="-10" width="680" height="520">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#101B35" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- App Window Frame -->
+  <g filter="url(#shadowApp)">
+    <rect x="20" y="20" width="600" height="440" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+
+    <!-- App Window Topbar -->
+    <rect x="20" y="20" width="600" height="52" rx="16" fill="#F8FAFC"/>
+    <rect x="20" y="56" width="600" height="16" fill="#F8FAFC"/>
+    <line x1="20" y1="72" x2="620" y2="72" stroke="#E2E8F0"/>
+
+    <!-- Window Buttons -->
+    <circle cx="48" cy="46" r="6" fill="#EF4444"/>
+    <circle cx="68" cy="46" r="6" fill="#F59E0B"/>
+    <circle cx="88" cy="46" r="6" fill="#10B981"/>
+
+    <!-- Brand Header in Mockup -->
+    <text x="120" y="51" fill="#101B35" font-family="Inter, sans-serif" font-weight="700" font-size="14">ArthFlow</text>
+    <text x="185" y="51" fill="#64748B" font-family="Inter, sans-serif" font-weight="500" font-size="12">| Personal Finance Management (Alpha v2.0)</text>
+
+    <!-- Search/Status Pill -->
+    <rect x="470" y="36" width="130" height="24" rx="12" fill="#FEF3C7" stroke="#FDE68A"/>
+    <circle cx="484" cy="48" r="4" fill="#F59E0B"/>
+    <text x="495" y="52" fill="#92400E" font-family="Inter, sans-serif" font-weight="600" font-size="10">In Development</text>
+
+    <!-- Main Content Grid -->
+    <!-- Left Balance Card -->
+    <rect x="45" y="95" width="320" height="165" rx="12" fill="url(#cardBal)"/>
+    <text x="70" y="125" fill="#93C5FD" font-family="Inter, sans-serif" font-weight="500" font-size="12">Total Balance Overview</text>
+    <text x="70" y="165" fill="#FFFFFF" font-family="Inter, sans-serif" font-weight="800" font-size="28">₹ 1,48,250.00</text>
+    
+    <rect x="70" y="195" width="125" height="42" rx="8" fill="rgba(255,255,255,0.12)"/>
+    <text x="82" y="212" fill="#6EE7B7" font-family="Inter, sans-serif" font-weight="600" font-size="11">↑ Income</text>
+    <text x="82" y="228" fill="#FFFFFF" font-family="Inter, sans-serif" font-weight="700" font-size="13">₹ 85,000</text>
+
+    <rect x="210" y="195" width="135" height="42" rx="8" fill="rgba(255,255,255,0.12)"/>
+    <text x="222" y="212" fill="#FCA5A5" font-family="Inter, sans-serif" font-weight="600" font-size="11">↓ Expenses</text>
+    <text x="222" y="228" fill="#FFFFFF" font-family="Inter, sans-serif" font-weight="700" font-size="13">₹ 32,450</text>
+
+    <!-- Right Quick Actions & Architecture Info -->
+    <rect x="385" y="95" width="210" height="165" rx="12" fill="#F8FAFC" stroke="#E2E8F0"/>
+    <text x="405" y="125" fill="#101B35" font-family="Inter, sans-serif" font-weight="700" font-size="13">Product Highlights</text>
+
+    <g transform="translate(405, 140)">
+      <circle cx="8" cy="8" r="4" fill="#2563EB"/>
+      <text x="20" y="12" fill="#334155" font-family="Inter, sans-serif" font-weight="500" font-size="11">Offline-First Engine</text>
+
+      <circle cx="8" cy="32" r="4" fill="#06D6E8"/>
+      <text x="20" y="36" fill="#334155" font-family="Inter, sans-serif" font-weight="500" font-size="11">Expense Categorization</text>
+
+      <circle cx="8" cy="56" r="4" fill="#FF8A00"/>
+      <text x="20" y="60" fill="#334155" font-family="Inter, sans-serif" font-weight="500" font-size="11">Multi-Account Ledger</text>
+
+      <circle cx="8" cy="80" r="4" fill="#10B981"/>
+      <text x="20" y="84" fill="#334155" font-family="Inter, sans-serif" font-weight="500" font-size="11">Encrypted Local Storage</text>
+    </g>
+
+    <!-- Bottom Recent Transactions Section -->
+    <rect x="45" y="280" width="550" height="155" rx="12" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <text x="70" y="310" fill="#101B35" font-family="Inter, sans-serif" font-weight="700" font-size="14">Recent Transaction Stream</text>
+    <text x="480" y="310" fill="#2563EB" font-family="Inter, sans-serif" font-weight="600" font-size="11">Export CSV</text>
+
+    <!-- Transaction Row 1 -->
+    <circle cx="85" cy="340" r="14" fill="#EFF6FF"/>
+    <text x="80" y="344" fill="#2563EB" font-family="Inter, sans-serif" font-weight="700" font-size="12">💼</text>
+    <text x="110" y="338" fill="#1E293B" font-family="Inter, sans-serif" font-weight="600" font-size="12">Consulting Income</text>
+    <text x="110" y="352" fill="#94A3B8" font-family="Inter, sans-serif" font-weight="500" font-size="10">Bank Transfer • Today</text>
+    <text x="520" y="344" fill="#10B981" font-family="Inter, sans-serif" font-weight="700" font-size="12">+₹ 45,000</text>
+    <line x1="70" y1="365" x2="570" y2="365" stroke="#F1F5F9"/>
+
+    <!-- Transaction Row 2 -->
+    <circle cx="85" cy="395" r="14" fill="#FFF7ED"/>
+    <text x="80" y="399" fill="#FF8A00" font-family="Inter, sans-serif" font-weight="700" font-size="12">☁️</text>
+    <text x="110" y="393" fill="#1E293B" font-family="Inter, sans-serif" font-weight="600" font-size="12">Cloud Infrastructure Subscription</text>
+    <text x="110" y="407" fill="#94A3B8" font-family="Inter, sans-serif" font-weight="500" font-size="10">Corporate Card • Yesterday</text>
+    <text x="525" y="399" fill="#EF4444" font-family="Inter, sans-serif" font-weight="700" font-size="12">-₹ 3,499</text>
+  </g>
+</svg>
